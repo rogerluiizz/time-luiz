@@ -57,7 +57,8 @@ const benefits = [
   "Linguagem profissional e acessível",
   "Otimização para processos seletivos atuais",
   "Atendimento online e personalizado",
-  "Ideal para estágio, primeiro emprego e área administrativa",
+  "Currículos modernos, estratégicos e preparados para processos seletivos atuais", 
+  "Ideal para profissionais que desejam melhorar sua apresentação e aumentar suas oportunidades."
 ];
 
 const faqs = [
@@ -72,9 +73,9 @@ const faqs = [
       "Sim. Criamos currículos voltados para estágio, jovem aprendiz, primeiro emprego, área administrativa e oportunidades corporativas de entrada.",
   },
   {
-    question: "O currículo é otimizado para ATS?",
+    question: "O currículo é otimizado para Inteligências Artificiais?",
     answer:
-      "Sim. A estrutura é pensada para ser clara, bem organizada e compatível com sistemas usados em processos seletivos.",
+      "Sim. A estrutura é pensada para ser clara, bem organizada e compatível com as principais Inteligências Artificiais usadas em processos seletivos.",
   },
   {
     question: "Como funciona o atendimento?",
@@ -128,7 +129,7 @@ export default function TimeLuizLandingPage() {
           </nav>
 
           <a href={whatsappLink} target="_blank" rel="noreferrer" className="rounded-full bg-[#16795f] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#105f4b]">
-            WhatsApp
+            Falar Comigo
           </a>
         </div>
       </header>
@@ -211,7 +212,7 @@ export default function TimeLuizLandingPage() {
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
             {services.map((service) => (
-              <div key={service.title} className="rounded-[1.7rem] border border-[#dceee8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+              <div key={service.title} className={service.title === "Profissional Completo" ? "rounded-[1.7rem] border-2 border-[#16795f] bg-white p-6 shadow-xl transition hover:-translate-y-1 hover:shadow-lg" : "rounded-[1.7rem] border border-[#dceee8] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"}>
                 <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#e6f5f0] text-xl font-black text-[#16795f]">
                   {service.icon}
                 </div>
@@ -235,6 +236,14 @@ export default function TimeLuizLandingPage() {
     </div>
   ))}
 </div>
+<a
+  href={whatsappLink}
+  target="_blank"
+  rel="noreferrer"
+  className="mt-6 inline-flex w-full items-center justify-center rounded-full bg-[#16795f] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#105f4b]"
+>
+  Quero esse plano
+</a>
               </div>
             ))}
           </div>
