@@ -89,9 +89,7 @@ export default function TimeLuizLandingPage() {
       <header className="sticky top-0 z-50 border-b border-[#dceee8] bg-[#f7fbf9]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
           <a href="#inicio" className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-[#16795f] text-lg font-black text-white shadow-sm">
-              TL
-            </div>
+            <img src="/logo.png" alt="Time Luiz" className="h-20 w-auto" />
             <div className="leading-tight">
               <p className="text-base font-bold text-[#16795f]">Time Luiz</p>
               <p className="text-xs text-[#5f6f69]">Seu currículo no próximo nível</p>
