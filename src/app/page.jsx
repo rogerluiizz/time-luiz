@@ -2,28 +2,53 @@ import React from "react";
 
 const services = [
   {
-    icon: "▣",
-    title: "Currículo Profissional",
+    icon: "📄",
+    title: "Currículo Essencial",
+    price: "R$ 39,90",
     description:
-      "Um currículo moderno, organizado e preparado para apresentar sua trajetória com clareza.",
+      "Reestruturação profissional do currículo com organização estratégica das informações.",
+    extras: [
+      "Currículo moderno e atualizado",
+      "Melhor apresentação profissional",
+      "1 encontro online de 30 minutos",
+    ],
   },
   {
-    icon: "↗",
-    title: "Currículo para Vaga",
+    icon: "💼",
+    title: "LinkedIn Estratégico",
+    price: "R$ 49,90",
     description:
-      "Adaptação estratégica do currículo para aumentar a conexão com uma oportunidade específica.",
+      "Otimização completa do perfil LinkedIn para atrair mais recrutadores.",
+    extras: [
+      "Headline e resumo otimizados",
+      "Perfil mais profissional",
+      "1 encontro online de 30 minutos",
+    ],
   },
   {
-    icon: "in",
-    title: "LinkedIn Otimizado",
+    icon: "🚀",
+    title: "Profissional Completo",
+    price: "R$ 79,90",
     description:
-      "Perfil mais completo, profissional e alinhado ao que recrutadores procuram.",
+      "Currículo + LinkedIn alinhados estrategicamente para aumentar suas oportunidades.",
+    extras: [
+      "Currículo profissional",
+      "LinkedIn otimizado",
+      "1 encontro estratégico de 1 hora",
+    ],
   },
   {
-    icon: "✓",
-    title: "Revisão Estratégica",
+    icon: "🎯",
+    title: "Plano Carreira & Vagas",
+    price: "R$ 197,90",
     description:
-      "Análise do seu currículo atual com ajustes de texto, estrutura, palavras-chave e apresentação.",
+      "Pacote completo com currículo, LinkedIn e orientação prática para conquistar vagas.",
+    extras: [
+      "Currículo + LinkedIn",
+      "2 encontros de 1 hora",
+      "Macetes escondidos do LinkedIn",
+      "Estratégias para vagas",
+    ],
   },
 ];
 
@@ -191,7 +216,25 @@ export default function TimeLuizLandingPage() {
                   {service.icon}
                 </div>
                 <h3 className="text-xl font-bold text-[#222222]">{service.title}</h3>
-                <p className="mt-3 text-sm leading-6 text-[#5f6f69]">{service.description}</p>
+                <p className="mt-3 text-2xl font-black text-[#16795f]">
+  {service.price}
+</p>
+
+<p className="mt-4 text-sm leading-6 text-[#5f6f69]">
+  {service.description}
+</p>
+
+<div className="mt-5 space-y-2">
+  {service.extras.map((item) => (
+    <div
+      key={item}
+      className="flex items-center gap-2 text-sm text-[#47524e]"
+    >
+      <span className="text-[#16795f]">✓</span>
+      <span>{item}</span>
+    </div>
+  ))}
+</div>
               </div>
             ))}
           </div>
