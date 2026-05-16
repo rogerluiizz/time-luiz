@@ -25,6 +25,9 @@ export const metadata = {
     "currículo online",
     "currículo moderno",
   ],
+  verification: {
+  google: "rB1x0FwsxY5gNbx5bdkcBKl98w4yUc6Yg2kN8Ny9uUc",
+},
 };
 
 export default function RootLayout({
