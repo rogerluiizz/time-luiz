@@ -202,7 +202,40 @@ export default function TimeLuizLandingPage() {
           </div>
         </div>
       </section>
+<section className="px-5 py-16 md:px-8">
+  <div className="mx-auto max-w-7xl">
+    <div className="max-w-3xl">
+      <p className="text-sm font-semibold uppercase tracking-widest text-[#16795f]">
+        Antes e depois
+      </p>
+      <h2 className="mt-3 text-3xl font-black md:text-5xl">
+        Veja como uma apresentação profissional muda a percepção do recrutador.
+      </h2>
+      <p className="mt-5 text-lg leading-8 text-[#47524e]">
+        Currículo e LinkedIn bem estruturados ajudam a transmitir mais clareza,
+        profissionalismo e confiança nos processos seletivos.
+      </p>
+    </div>
 
+    <div className="mt-10 grid gap-6 lg:grid-cols-2">
+      <div className="rounded-[2rem] border border-[#dceee8] bg-white p-4 shadow-sm">
+        <img
+          src="/antes-depois-curriculo.png"
+          alt="Antes e depois de currículo profissional"
+          className="w-full rounded-[1.5rem]"
+        />
+      </div>
+
+      <div className="rounded-[2rem] border border-[#dceee8] bg-white p-4 shadow-sm">
+        <img
+          src="/antes-depois-linkedin.png"
+          alt="Antes e depois de perfil LinkedIn otimizado"
+          className="w-full rounded-[1.5rem]"
+        />
+      </div>
+    </div>
+  </div>
+</section>
       <section id="servicos" className="px-5 py-16 md:px-8">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
