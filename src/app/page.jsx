@@ -115,28 +115,28 @@ export default function TimeLuizLandingPage() {
       <header className="sticky top-0 z-50 border-b border-[#dceee8] bg-[#f7fbf9]/90 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
           <a href="#inicio" className="flex items-center gap-3">
-            <img src="/logo.png" alt="Time Luiz" className="h-20 w-auto" />
+            <img src="/logo.png" alt="Time Luiz" className="h-24 w-auto" />
             <div className="leading-tight">
-              <p className="text-base font-bold text-[#16795f]">Time Luiz</p>
+              <p className="text-lg font-bold text-[#16795f]">Time Luiz</p>
               <p className="text-xs text-[#5f6f69]">Seu currículo no próximo nível</p>
             </div>
           </a>
 
-          <nav className="hidden items-center gap-8 text-sm font-medium text-[#47524e] md:flex">
+          <nav className="hidden items-center gap-10 text-base font-medium text-[#47524e] md:flex">
             <a href="#servicos" className="hover:text-[#16795f]">Serviços</a>
             <a href="#como-funciona" className="hover:text-[#16795f]">Como funciona</a>
             <a href="#faq" className="hover:text-[#16795f]">Dúvidas</a>
           </nav>
 
-          <a href={whatsappLink} target="_blank" rel="noreferrer" className="rounded-full bg-[#16795f] px-5 py-2 text-sm font-semibold text-white transition hover:bg-[#105f4b]">
+          <a href={whatsappLink} target="_blank" rel="noreferrer" className="rounded-full bg-[#16795f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#105f4b]">
             Falar Comigo
           </a>
         </div>
       </header>
 
-      <section id="inicio" className="relative overflow-hidden px-5 py-20 md:px-8 md:py-28">
+      <section id="inicio" className="relative overflow-hidden px-5 py-8 md:px-8 md:py-12">
         <div className="absolute left-1/2 top-10 h-80 w-80 -translate-x-1/2 rounded-full bg-[#9ad9c8]/40 blur-3xl" />
-        <div className="relative mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
+        <div className="relative mx-auto grid max-w-7xl items-start gap-12 md:grid-cols-2">
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#9ad9c8] bg-white px-4 py-2 text-sm font-medium text-[#16795f] shadow-sm">
               ✦ Currículos, LinkedIn e carreira
@@ -156,9 +156,10 @@ export default function TimeLuizLandingPage() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#47524e]">
-              <span className="rounded-full bg-white px-4 py-2 shadow-sm">ATS-friendly</span>
-              <span className="rounded-full bg-white px-4 py-2 shadow-sm">Online</span>
-              <span className="rounded-full bg-white px-4 py-2 shadow-sm">Acessível</span>
+              <span className="rounded-full bg-white px-12 py-2 shadow-sm">Você no seu próximo emprego</span>
+              <span className="rounded-full bg-white px-12 py-2 shadow-sm">Totalmente acessível</span>
+              <span className="rounded-full bg-white px-12 py-2 shadow-sm">Acompanhamento online</span>
+              <span className="rounded-full bg-white px-12 py-2 shadow-sm">Resultados comprovados</span>
             </div>
           </div>
 
@@ -187,7 +188,7 @@ export default function TimeLuizLandingPage() {
         </div>
       </section>
 
-      <section className="px-5 py-16 md:px-8">
+      <section className="px-5 py-6 md:px-8">
         <div className="mx-auto max-w-7xl rounded-[2rem] bg-[#222222] p-8 text-white md:p-12">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
@@ -202,7 +203,7 @@ export default function TimeLuizLandingPage() {
           </div>
         </div>
       </section>
-<section className="px-5 py-16 md:px-8">
+<section className="px-5 py-8 md:px-8">
   <div className="mx-auto max-w-7xl">
     <div className="max-w-3xl">
       <p className="text-sm font-semibold uppercase tracking-widest text-[#16795f]">
@@ -218,20 +219,30 @@ export default function TimeLuizLandingPage() {
     </div>
 
     <div className="mt-10 grid gap-6 lg:grid-cols-2">
-      <div className="rounded-[2rem] border border-[#dceee8] bg-white p-4 shadow-sm">
-        <img
-          src="/antes-depois-curriculo.png"
-          alt="Antes e depois de currículo profissional"
-          className="w-full rounded-[1.5rem]"
-        />
+      <div>
+        <h3 className="mb-4 text-2xl font-bold text-[#222222]">
+          Currículo estratégico
+        </h3>
+        <div className="rounded-[2rem] border border-[#dceee8] bg-white p-4 shadow-sm">
+          <img
+            src="/antes-depois-curriculo.png"
+            alt="Antes e depois de currículo profissional"
+            className="w-full rounded-[1.5rem]"
+          />
+        </div>
       </div>
 
-      <div className="rounded-[2rem] border border-[#dceee8] bg-white p-4 shadow-sm">
-        <img
-          src="/antes-depois-linkedin.png"
-          alt="Antes e depois de perfil LinkedIn otimizado"
-          className="w-full rounded-[1.5rem]"
-        />
+      <div>
+        <h3 className="mb-4 text-2xl font-bold text-[#222222]">
+          LinkedIn estratégico
+        </h3>
+        <div className="rounded-[2rem] border border-[#dceee8] bg-white p-4 shadow-sm">
+          <img
+            src="/antes-depois-linkedin.png"
+            alt="Antes e depois de perfil LinkedIn otimizado"
+            className="w-full rounded-[1.5rem]"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -290,7 +301,7 @@ export default function TimeLuizLandingPage() {
               <p className="text-sm font-semibold uppercase tracking-widest text-[#16795f]">Como funciona</p>
               <h2 className="mt-3 text-3xl font-black md:text-5xl">Atendimento online, direto e sem enrolação.</h2>
               <p className="mt-5 text-lg leading-8 text-[#47524e]">
-                Você envia suas informações, fala sobre seu objetivo profissional e recebe um material mais claro, moderno e alinhado ao mercado.
+                Você envia suas informações, fala sobre seu objetivo profissional e recebe um material mais claro, moderno e alinhado ao mercado. Com garantia de mais de 200 alunos satisfeitos, o processo é pensado para ser simples, rápido e acessível para todos os profissionais. E o melhor: o atendimento é 100% online, sem complicações ou burocracias e o preço é acessível para quem quer melhorar sua apresentação profissional.
               </p>
             </div>
 
